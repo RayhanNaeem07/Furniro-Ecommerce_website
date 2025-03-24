@@ -1,0 +1,181 @@
+/* Contact BG */
+.contact-bg-img {
+  height: 316px;
+  background-image: url(../images/shop-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-bg-img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-bg-img-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-bg-img-text h1 {
+  font-size: 3rem;
+  color: black;
+  font-weight: 500;
+}
+
+.contact-bg-img-text p {
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact-bg-span {
+  font-weight: 300;
+}
+
+/* Contact form */
+
+.contact-form-area {
+  height: 950px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.address,
+.phone,
+.working-time {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.form-title {
+  margin: 4rem 0;
+}
+
+.form-title h1 {
+  font-weight: 600;
+  font-size: 2.1rem;
+  color: black;
+  text-align: center;
+}
+
+.form-title p {
+  width: 644px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #9f9f9f;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Form left */
+
+.address-desc{
+    margin-left: 1rem;
+    padding-top: 3rem;
+}
+.address-desc h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.address-desc p {
+  width: 212px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+}
+
+/* Form */
+.form {
+  width: 635px;
+  height: 923px;
+}
+
+.form-field h4 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.form-field input {
+  width: 528px;
+  height: 75px;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  margin-bottom: 1.5rem;
+}
+
+.form-field input:focus {
+  outline: none;
+}
+
+.form-field input::placeholder {
+  padding-left: 1rem;
+}
+
+.form-field .form-msg{
+    height: 120px;
+}
+
+.form-btn {
+  width: 237px;
+  height: 55px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #b88e2f;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #b88e2f;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+
+.form-btn:hover {
+  background-color: #7a6228;
+}
+
+/* Service */
+
+.service-area {
+  height: 270px;
+  background-color: #faf3ea;
+}
+.service-list-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 3rem;
+}
+
+.service-item {
+  display: flex;
+}
+
+.service-item-details {
+  padding: 0.5rem;
+}
+
+.service-item-details h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #242424;
+}
+
+.service-item-details p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #898989;
+}

@@ -55,6 +55,13 @@ li {
 
 .nav-link {
   color: #000000;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3 ease;
+}
+
+.nav-link:hover{
+ color: #606060;
 }
 
 .header-icons-container {
@@ -75,7 +82,7 @@ li {
 .hero-bg-img {
   width: 100vw;
   height: 716px;
-  background-image: url(./images/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+  background-image: url(../images/scandinavian-interior-mockup-wall-decal-background\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -233,13 +240,11 @@ li {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-
 }
 
 /* Room */
 
 .room-container {
-
   height: 670px;
   background-color: #fcf8f3;
   margin-top: 3rem;
@@ -247,10 +252,9 @@ li {
 .room {
   display: flex;
   padding: 2rem 0 2rem 4rem;
- 
 }
 
-.room-left{
+.room-left {
   margin-top: 180px;
 }
 .room-title {
@@ -268,7 +272,6 @@ li {
   font-size: 1rem;
   line-height: 150%;
   color: #616161;
- 
 }
 
 .room-link {
@@ -283,7 +286,7 @@ li {
   margin-top: 2rem;
 }
 
-.room-right{
+.room-right {
   margin-left: 180px;
 }
 
@@ -293,9 +296,107 @@ li {
   gap: 1rem;
 }
 
-.room-slider-img{
- 
+.room-slider-img {
   height: 486px;
+}
 
-  
+/* Furniture gallery */
+
+.furniture-gallery-container {
+  height: 780px;
+  margin: 1rem 0;
+}
+.furniture-gallery-title {
+  margin-top: 2rem;
+}
+.furniture-gallery-title h4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  color: #616161;
+}
+
+.furniture-gallery-title h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+/* Footer */
+
+.footer-container {
+  padding: 1rem 4rem;
+}
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.footer-logo p {
+  width: 285px;
+  color: #9f9f9f;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.footer-links-title h4 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #9f9f9f;
+  margin-bottom: 2rem;
+}
+
+.footer-links-title input {
+  border: none;
+  width: 220px;
+  text-decoration: underline;
+}
+
+.footer-links-title input::placeholder {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #9f9f9f;
+  padding: 5px;
+}
+
+.footer-links-title input:focus {
+  outline: none;
+}
+
+.footer-logo h4 {
+  margin-bottom: 1.8rem;
+}
+
+.footer-nav-link {
+  display: block;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.footer-nav-link:hover{
+  color: #606060;
+}
+
+.footer-subs-link {
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  padding: 1rem 0;
 }
