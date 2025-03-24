@@ -5,9 +5,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-h3 {
+h1 {
+  color: #333333;
+}
+
+h4 {
   font-size: 2rem;
-  font-weight: 700;
+
   color: #333333;
 }
 
@@ -86,13 +90,11 @@ li {
   right: 2.5rem;
   background-color: #fff3e3;
   border-radius: 10px;
-
 }
 
-.hero-desc{
-    margin-top: 4rem;
+.hero-desc {
+  margin-top: 4rem;
 }
-
 
 .hero-desc-subtitle {
   font-weight: 600;
@@ -123,8 +125,112 @@ li {
   height: 74px;
   padding: 25px 72px;
   margin-top: 3.2rem;
-  background-color: #B88E2F;
+  background-color: #b88e2f;
   border: none;
   color: white;
   font-weight: 700;
+}
+
+/* Range */
+.range-container {
+  margin: 2rem 0;
+  padding: 0 7rem;
+}
+.range-title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.range-p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.range-imgs-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.range-cart-p {
+  font-weight: 600;
+  font-size: 1.5;
+  color: #333333;
+  text-align: center;
+}
+
+/* Product */
+
+.products-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #3a3a3a;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.products-cart-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.products-cart-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.product-cart-desc {
+  padding: 1rem;
+  background-color: #f4f5f7;
+}
+
+.product-cart-desc h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #3a3a3a;
+}
+
+.product-cart-desc p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #898989;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-price p {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: #3a3a3a;
+}
+
+.old-price p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  text-decoration: line-through;
+  color: #b0b0b0;
+}
+
+.product-btn {
+  width: 245px;
+  height: 48px;
+  border: 1px solid #b88e2f;
+  color: #B88E2F;
+  font-weight: 600;
+  line-height: 150%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
