@@ -1,0 +1,263 @@
+/* Checkout BG */
+
+.contact-bg-img {
+  height: 316px;
+  background-image: url(../images/shop-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-bg-img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-bg-img-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-bg-img-text h1 {
+  font-size: 3rem;
+  color: black;
+  font-weight: 500;
+}
+
+.contact-bg-img-text p {
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact-bg-span {
+  font-weight: 300;
+}
+
+/* Service */
+
+.service-area {
+  height: 270px;
+  background-color: #faf3ea;
+}
+.service-list-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 3rem;
+}
+
+.service-item {
+  display: flex;
+}
+
+.service-item-details {
+  padding: 0.5rem;
+}
+
+.service-item-details h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #242424;
+}
+
+.service-item-details p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #898989;
+}
+
+/* Price */
+
+.billing-right {
+  width: 608px;
+  height: 789px;
+}
+
+.price-section {
+  display: flex;
+}
+
+/* Billing form */
+
+.billing-form-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5rem;
+}
+
+.billing-form h5 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Billing form left */
+
+.billing-form input {
+  width: 453px;
+  height: 75px;
+  border: 1px solid #9f9f9f;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.billing-form select {
+  width: 453px;
+  height: 75px;
+  border: 1px solid #9f9f9f;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.form-name-field {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+#fname,
+#lname {
+  width: 211px;
+}
+
+/* Billing Right Section */
+.billing-right {
+  max-width: 500px; /* Constrain width to match screenshot */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Price Section */
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.price-section-values {
+  text-align: right;
+}
+
+.price-section-titles h3,
+.price-section-values h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.price-section-titles p {
+  font-size: 1rem;
+  color: #9f9f9f;
+  margin-bottom: 15px;
+}
+
+.price-section-titles .price-title-p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+}
+
+.price-section-values .price-section-p {
+  font-weight: 300;
+  font-size: 1rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+.price-section-titles p span {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.price-section-values p:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d4a017;
+  margin-top: 0.4rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Payment Section */
+.payment-section {
+  margin-top: 20px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  accent-color: black;
+}
+
+.payment-option label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+
+.payment-option .bank-transfer {
+  color: black;
+  font-weight: 400;
+}
+
+.payment-description {
+  font-size: 0.9rem;
+  color: #9f9f9f;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.privacy-notice {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: black;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.privacy-span {
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.place-order-btn {
+  display: block;
+  width: 318px;
+  height: 64px;
+  font-size: 1.25rem;
+  border-radius: 15px;
+  margin: 2rem auto; 
+  background-color: transparent;
+  border: 1px solid black;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #d4a017;
+  color: #fff;
+  border-color: #d4a017;
+}

@@ -25,7 +25,7 @@
       href="./images/Meubel House_Logos-05.svg"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/checkout.css">
     <title>Furniro</title>
   </head>
   <body>
@@ -65,81 +65,20 @@
     </header>
     <!-- Header end -->
     
-    <!-- Contact Background start -->
+    <!-- Checkout Background start -->
     <section class="contact-area">
       <div class="contact-bg-img">
         <div class="contact-bg-img-text">
           <img src="./images/Meubel House_Logos-05.svg" alt="">
-          <h1>Contact</h1>
-          <p> Home > <span class="contact-bg-span">Contact</span></p>
+          <h1>Checkout</h1>
+          <p> Home > <span class="contact-bg-span">Checkout</span></p>
         </div>
       </div>
      </section>
-    <!-- Contact Background end -->
-    
-    <!-- Contact form section start -->
-    <section class="contact-form-area">
-      <div class="form-title">
-        <h1>Get In Touch With Us</h1>
-        <p>For More Information About Our Product & Services. Please Feel Free To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
-      </div>
-      <div class="form-container">
-       <div class="form-left">
-        <div class="address">
-          <img src="./images/address-icon.svg" alt="">
-          <div class="address-desc">
-            <h4>Address</h4>
-            <p>236 5th SE Avenue, New York NY10000, United States</p>
-          </div>
-        </div>
-        <div class="phone">
-          <img src="./images/bxs_phone.svg" alt="">
-          <div class="address-desc">
-            <h4>Phone</h4>
-            <p>Mobile: +(84) 546-6789 
-              Hotline: +(84) 456-6789</p>
-          </div>
-        </div>
-        <div class="working-time">
-          <img src="./images/bi_clock-fill.svg" alt="">
-          <div class="address-desc">
-            <h4>Working time</h4>
-            <p>Monday-Friday: 9:00 - 22:00 <br>
-              Saturday-Sunday: 9:00 - 21:00</p>
-          </div>
-        </div>
-      </div>
-      <div class="form-right">
-       <div class="form">
-
-        <div class="form-field">
-          <h4>Your name</h4>
-          <input type="text" placeholder="Write your name">
-        </div>
-
-        <div class="form-field">
-          <h4>Email address</h4>
-          <input type="text" placeholder="Write your email">
-        </div>
-
-        <div class="form-field">
-          <h4>Subject</h4>
-          <input type="text" placeholder="This is an optional">
-        </div>
-
-        <div class="form-field " >
-          <h4>Message</h4>
-          <input type="text" placeholder="Hi! i'd like to ask about" class="form-msg">
-        </div>
-        <button class="form-btn">Submit</button>
-       </div>
-      </div>
-     </div>
-    </section>
-    <!-- Contact form section end -->
-
+    <!-- Checkout Background end -->
+   
     <!-- Service section start -->
-     <section class="service-area">
+    <section class="service-area">
       <div class="service-list-container">
 
         <div class="service-item">
@@ -179,6 +118,124 @@
       </div>
      </section>
     <!-- Service section end -->
+     
+    <!-- Billing section start -->
+    <section class="billing-form-area">
+      <div class="billing-left">
+        <div class="billing-form">
+          <h1>Billing Details</h1>
+  
+          <div class="form-name-field">
+            <div class="first-name">
+              <h5>First Name</h5>
+              <input type="text" id="fname">
+            </div>
+            <div class="last-name">
+              <h5>Last Name</h5>
+              <input type="text" id="lname">
+            </div>
+          </div>
+  
+          <div class="company-name">
+            <h5>Company Name (Optional)</h5>
+            <input type="text">
+          </div>
+  
+          <div class="county-name">
+            <h5>Country/Region</h5>
+            <select name="" id="">
+              <option value="">Sri Lanka</option>
+              <option value="">Pakistan</option>
+              <option value="">Bangladesh</option>
+            </select>
+          </div>
+  
+          <div class="street-address">
+            <h5>Street Address</h5>
+            <input type="text">
+          </div>
+  
+          <div class="town-name">
+            <h5>Town/City</h5>
+            <input type="text">
+          </div>
+  
+          <div class="province">
+            <h5>Province</h5>
+            <select name="" id="">
+              <option value="">Western Province</option>
+              <option value="">Pakistan Province</option>
+              <option value="">India Province</option>
+            </select>
+          </div>
+  
+          <div class="zip-code">
+            <h5>ZIP Code</h5>
+            <input type="text">
+          </div>
+  
+          <div class="phone">
+            <h5>Phone</h5>
+            <input type="number" name="" id="">
+          </div>
+  
+          <div class="email-address">
+            <h5>Email</h5>
+            <input type="email" name="" id="">
+          </div>
+  
+          <div class="add-info">
+            <input type="text" name="" id="" placeholder="Additional Information">
+          </div>
+        </div>
+      </div>
+  
+      <div class="billing-right">
+        <div class="price-section">
+          <div class="price-section-titles">
+            <h3>Product</h3>
+            <p>Asgaara sofa <span> X 1</span></p>
+            <p class="price-title-p">Subtotal</p>
+            <p class="price-title-p">Total</p>
+          </div>
+          
+          <div class="price-section-values">
+            <h3>Subtotal</h3>
+            <p class="price-section-p">Rs. 250,000.00</p>
+            <p class="price-section-p">Rs. 250,000.00</p>
+            <p>Rs. 250,000.00</p>
+          </div>
+        </div>
+        <hr>
+  
+        <!-- Payment Section -->
+        <div class="payment-section">
+          <div class="payment-option">
+            <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer" checked>
+            <label for="bank-transfer" class="bank-transfer">Direct Bank Transfer</label>
+          </div>
+          <p class="payment-description">
+            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+          </p>
+
+          <div class="payment-option">
+            <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+            <label for="cash-on-delivery">Direct Bank Transfer</label>
+          </div>
+
+          <div class="payment-option">
+            <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+            <label for="cash-on-delivery">Cash on Delivery</label>
+          </div>
+
+          <p class="privacy-notice">
+            Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span class="privacy-span">privacy policy</span>.
+          </p>
+          <button class="place-order-btn">Place Order</button>
+        </div>
+      </div>
+    </section>
+    <!-- Billing section end -->
 
     <!-- Footer start -->
      <hr>
