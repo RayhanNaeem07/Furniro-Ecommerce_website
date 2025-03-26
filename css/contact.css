@@ -139,11 +139,12 @@
   background-color: #b88e2f;
   margin-top: 2rem;
   cursor: pointer;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 
 .form-btn:hover {
-  background-color: #7a6228;
+  background-color: white;
+  color: black;
 }
 
 /* Service */

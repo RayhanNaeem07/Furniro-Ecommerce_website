@@ -1,0 +1,277 @@
+/* Background */
+
+.contact-bg-img {
+  height: 316px;
+  background-image: url(../images/shop-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-bg-img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-bg-img-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-bg-img-text h1 {
+  font-size: 3rem;
+  color: black;
+  font-weight: 500;
+}
+
+.contact-bg-img-text p {
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact-bg-span {
+  font-weight: 300;
+}
+
+/* Hero */
+
+.blog-hero-area {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Hero right */
+
+.search-box {
+  width: 311px;
+  height: 58px;
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  margin-top: 3rem;
+}
+
+.search-box input {
+  border: none;
+}
+.search-box input:focus {
+  outline: none;
+}
+
+/* Hero right top */
+
+.hero-right-top h1 {
+  display: block;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: black;
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px 10px;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.category-name,
+.category-count {
+  font-size: 1rem;
+  color: #9f9f9f;
+  padding: 1rem 0;
+}
+
+/* Hero right bottom */
+
+.hero-right-bottom {
+  width: 393px;
+  height: 650px;
+  margin-top: 5rem;
+  padding: 1.5rem;
+}
+
+.hero-right-bottom h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.recent-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.post-item img {
+  width: 80px; 
+  height: 80px;
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+.post-text {
+  flex: 1; 
+}
+
+.post-text h3 {
+  width: 170px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.post-text p {
+  font-size: 0.75rem;
+  color: #9f9f9f;
+}
+
+/* Hero cart */
+
+.blog-cart-item {
+  width: 820px;
+  height: 794px;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.cart-icon-details {
+  display: flex;
+  gap: 10px;
+  padding: 0.5rem 0;
+  align-items: center;
+}
+
+.cart-icon-details div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+ margin-left: 0.7rem;
+}
+
+.cart-icon-details p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.blog-cart-item h1 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: black;
+  padding: 1rem 0;
+}
+
+.blog-cart-item p {
+  font-size: 1rem;
+  color: #9f9f9f;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.blog-cart-item a {
+
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color:#000000; 
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  padding: 1rem 0;
+  
+}
+
+.blog-cart-item a:hover {
+  color: #b88c14; 
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end; 
+    margin-top: 3rem;
+  }
+
+  .pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px;
+    background-color: #f5f5f5; 
+    color:black;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .pagination a.active {
+    background-color: #d4a017; 
+    color: #fff; 
+  }
+
+  .pagination a.next {
+    width: 98px;
+    height: 60px;
+    padding: 0 15px; 
+  }
+
+  .pagination a:hover:not(.active) {
+    background-color: #e0e0e0; 
+  }
+
+/* Service */
+
+.service-area {
+  height: 270px;
+  background-color: #faf3ea;
+}
+.service-list-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 3rem;
+}
+
+.service-item {
+  display: flex;
+}
+
+.service-item-details {
+  padding: 0.5rem;
+}
+
+.service-item-details h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #242424;
+}
+
+.service-item-details p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #898989;
+}

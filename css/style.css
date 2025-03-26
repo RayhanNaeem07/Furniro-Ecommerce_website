@@ -60,8 +60,8 @@ li {
   transition: 0.3 ease;
 }
 
-.nav-link:hover{
- color: #606060;
+.nav-link:hover {
+  color: #606060;
 }
 
 .header-icons-container {
@@ -136,6 +136,13 @@ li {
   border: none;
   color: white;
   font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: black;
 }
 
 /* Range */
@@ -191,28 +198,167 @@ li {
   margin: 2rem 0;
 }
 
+.product-cart {
+  width: 285px;
+  height: 446px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff6f61; /* Pink color similar to the image */
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.new{
+  background-color: rgb(46, 193, 172);
+}
+
+.product-cart:hover .discount-badge {
+  opacity: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+
+.product-cart:hover .overlay::before {
+  transform: translateY(0);
+}
+
+.add-to-cart,
+.actions {
+  position: absolute; /* Fix position within the overlay */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0;
+  transition: opacity 0.3s; /* Fade in after the overlay drops */
+}
+
+.add-to-cart {
+  top: 40%; /* Position the button slightly above the center */
+}
+
+.actions {
+  top: 50%; /* Position the links below the button */
+}
+
+.actions {
+  opacity: 0;
+}
+
+.product-cart:hover .add-to-cart,
+.product-cart:hover .actions {
+  opacity: 1;
+}
+
+.add-to-cart {
+  width: 202px;
+  height: 48px;
+  padding: 0.6rem 1.5rem;
+  background-color: #fff;
+  color: #b88e2f;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #b88e2f;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.action-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: color 0.3s ease;
+}
+
+.action-link:hover {
+  color: #d4a017;
+}
+
+.action-link::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .product-cart-desc {
-  padding: 1rem;
-  background-color: #f4f5f7;
+  padding: 15px;
+  text-align: left;
 }
 
 .product-cart-desc h4 {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 120%;
+  font-size: 1.2rem;
   color: #3a3a3a;
+  margin-bottom: 5px;
 }
 
 .product-cart-desc p {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 150%;
+  font-size: 0.9rem;
   color: #898989;
+  margin-bottom: 10px;
 }
 
 .product-price {
   display: flex;
-  justify-content: space-between;
+ 
 }
 
 .new-price p {
@@ -220,6 +366,8 @@ li {
   font-size: 1.25rem;
   line-height: 150%;
   color: #3a3a3a;
+  margin-right: 1rem;
+
 }
 
 .old-price p {
@@ -228,6 +376,7 @@ li {
   line-height: 150%;
   text-decoration: line-through;
   color: #b0b0b0;
+
 }
 
 .product-btn {
@@ -240,6 +389,13 @@ li {
   display: block;
   margin: 0 auto;
   cursor: pointer;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+.product-btn:hover {
+  background-color: #b88e2f;
+  color: black;
 }
 
 /* Room */
@@ -294,8 +450,76 @@ li {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  position: relative;
 }
 
+.room-img-inner {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.room-img-inner-desc {
+  width: 217px;
+  height: 130px;
+  background-color: #ffffff;
+  padding: 1.3rem;
+}
+
+.inner-desc-top {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.room-img-inner-desc-line {
+  height: 1px;
+  width: 22px;
+  background-color: #616161;
+  margin: 0 10px;
+}
+
+.inner-desc-top p {
+  color: #616161;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.room-img-inner-desc h3 {
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+
+/* Room img inner button   */
+
+.room-img-inner .room-img-inner-btn {
+  width: 48px;
+  height: 48px;
+  background-color: #b88e2f;
+  margin-top: 5.1rem;
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.room-img-inner-btn:hover {
+  background-color: #9f9f9f;
+  color: black;
+}
+
+/* Slider */
+
+.room-img-container .indicator{
+  display: block;
+  width: 120px;
+  position: absolute;
+  left: 410px;
+  top: 70px;
+}
 .room-slider-img {
   height: 486px;
 }
@@ -303,7 +527,6 @@ li {
 /* Furniture gallery */
 
 .furniture-gallery-container {
-  height: 780px;
   margin: 1rem 0;
 }
 .furniture-gallery-title {
@@ -324,6 +547,42 @@ li {
   letter-spacing: 0%;
   text-align: center;
   color: #3a3a3a;
+  margin-bottom: 2rem;
+}
+
+/* Furniture gallery Collage */
+
+.f-gallery-img-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.collage-left-bottom,
+.collage-right-bottom {
+  margin-top: 1rem;
+}
+
+.f-gallery2,
+.f-gallery7 {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.f-gallery-img-left-up {
+  display: inline-block;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+}
+
+.f-gallery-img-right-up {
+  display: inline;
+  padding-bottom: 2.9rem;
+  padding-left: 1rem;
+}
+
+.collage-middle {
+  padding-top: 10rem;
 }
 
 /* Footer */
@@ -383,9 +642,10 @@ li {
   font-weight: 500;
   font-size: 1rem;
   padding: 1rem 0;
+  transition: 0.3s ease;
 }
 
-.footer-nav-link:hover{
+.footer-nav-link:hover {
   color: #606060;
 }
 

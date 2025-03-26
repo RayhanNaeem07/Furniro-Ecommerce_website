@@ -1,8 +1,4 @@
-.filter-area {
-  height: 416px;
-  background-color: #f9f1e7;
-}
-
+/* Filter Background */
 .filter-bg-img {
   height: 316px;
   background-image: url(../images/shop-bg.png);
@@ -34,6 +30,69 @@
 
 .filter-bg-span {
   font-weight: 300;
+}
+
+/* Filter  */
+
+.filter-section {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #f9f1e7;
+
+}
+
+.filter-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+}
+
+
+.results-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  padding-left: 1rem;
+  border-left: 2px solid #898989;
+}
+
+.sort-options {
+  display: flex;
+  gap: 20px;
+}
+
+.show-option, .sort-by-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.show-option label, .sort-by-option label {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.show-option select, .sort-by-option select {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 /* Shop product list */
